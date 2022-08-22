@@ -12,8 +12,8 @@ function LoginPage() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const onSubmit = (data) => {
-    console.log(data);
     navigate("/");
   };
 
@@ -86,7 +86,7 @@ function LoginPage() {
             <p className="text-gray-400  text-center max-w-md">
               or Signup with
             </p>
-            <p className="text-center p-2 cursor-pointer">Sign Up</p>
+            <p className="text-center p-2 cursor-pointer" onClick={() => navigate("/")}> Sign Up</p>
           </div>
         </form>
       </div>
